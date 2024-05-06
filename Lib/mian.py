@@ -80,11 +80,10 @@ def generate_random_graph(num_vertices, num_edges, flag):
 
 
 def main():
-    # Укажите количество вершин и рёбер, которые вы хотите сгенерировать
+    # Укажите количество вершин и рёбер и нилицие цикла
+    # 13 12 0 = граф без циклов с 13 вершинами и 12 рёбрами
 
-    num_vertices, num_edges, flag = map(int, input().split())  # Например, 13 вершин
-    # Например, 12 рёбер
-    # True для графа с циклом, False для графа без цикла
+    num_vertices, num_edges, flag = map(int, input().split())
 
     # Генерация случайного графа
     generate_random_graph(num_vertices, num_edges, flag)
